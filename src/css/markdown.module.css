@@ -1,0 +1,3 @@
+.markdown {
+  @apply prose prose-base dark:prose-invert lg:prose-lg;
+}

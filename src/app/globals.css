@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 90deg 29% 97%; /* background */
+    --err: 0deg 75% 42%; /* error */
+    --err-con: 6deg 100% 92%; /* error-container */
+    --iv-on-sf: 90deg 12% 94%; /* inverse-on-surface */
+    --iv-pr: 159deg 76% 52%; /* inverse-primary */
+    --iv-sf: 140deg 3% 19%; /* inverse-surface */
+    --on-bg: 140deg 6% 10%; /* on-background */
+    --on-err: 0deg 0% 100%; /* on-error */
+    --on-err-con: 358deg 100% 13%; /* on-error-container */
+    --on-pr: 0deg 0% 100%; /* on-primary */
+    --on-pr-con: 156deg 100% 6%; /* on-primary-container */
+    --on-pr-fx: 156deg 100% 6%; /* on-primary-fixed */
+    --on-pr-fx-var: 160deg 100% 16%; /* on-primary-fixed-variant */
+    --on-sec: 0deg 0% 100%; /* on-secondary */
+    --on-sec-con: 154deg 51% 8%; /* on-secondary-container */
+    --on-sec-fx: 154deg 51% 8%; /* on-secondary-fixed */
+    --on-sec-fx-var: 149deg 16% 25%; /* on-secondary-fixed-variant */
+    --on-sf: 140deg 6% 10%; /* on-surface */
+    --on-sf-var: 140deg 7% 27%; /* on-surface-variant */
+    --on-ter: 0deg 0% 100%; /* on-tertiary */
+    --on-ter-con: 195deg 100% 8%; /* on-tertiary-container */
+    --on-ter-fx: 195deg 100% 8%; /* on-tertiary-fixed */
+    --on-ter-fx-var: 196deg 43% 25%; /* on-tertiary-fixed-variant */
+    --outline: 140deg 4% 46%; /* outline */
+    --outline-var: 127deg 8% 77%; /* outline-variant */
+    --pr: 161deg 100% 21%; /* primary */
+    --pr-con: 156deg 99% 66%; /* primary-container */
+    --pr-fx: 156deg 99% 66%; /* primary-fixed */
+    --pr-fx-dim: 159deg 76% 52%; /* primary-fixed-dim */
+    --scrim: 0deg 0% 0%; /* scrim */
+    --sec: 147deg 13% 35%; /* secondary */
+    --sec-con: 141deg 37% 86%; /* secondary-container */
+    --sec-fx: 141deg 37% 86%; /* secondary-fixed */
+    --sec-fx-dim: 143deg 19% 75%; /* secondary-fixed-dim */
+    --shadow: 0deg 0% 0%; /* shadow */
+    --sf: 90deg 29% 97%; /* surface */
+    --sf-bright: 90deg 29% 97%; /* surface-bright */
+    --sf-con: 90deg 11% 93%; /* surface-container */
+    --sf-con-hg: 90deg 8% 91%; /* surface-container-high */
+    --sf-con-hgest: 90deg 7% 88%; /* surface-container-highest */
+    --sf-con-lw: 90deg 15% 95%; /* surface-container-low */
+    --sf-con-lwest: 0deg 0% 100%; /* surface-container-lowest */
+    --sf-dim: 105deg 5% 85%; /* surface-dim */
+    --sf-tint: 161deg 100% 21%; /* surface-tint */
+    --sf-var: 127deg 15% 88%; /* surface-variant */
+    --ter: 197deg 31% 35%; /* tertiary */
+    --ter-con: 198deg 88% 87%; /* tertiary-container */
+    --ter-fx: 198deg 88% 87%; /* tertiary-fixed */
+    --ter-fx-dim: 198deg 46% 76%; /* tertiary-fixed-dim */
+  }
+  .dark {
+    --bg: 140deg 8% 7%; /* background */
+    --err: 6deg 100% 84%; /* error */
+    --err-con: 356deg 100% 29%; /* error-container */
+    --iv-on-sf: 140deg 3% 19%; /* inverse-on-surface */
+    --iv-pr: 161deg 100% 21%; /* inverse-primary */
+    --iv-sf: 90deg 7% 88%; /* inverse-surface */
+    --on-bg: 90deg 7% 88%; /* on-background */
+    --on-err: 357deg 100% 21%; /* on-error */
+    --on-err-con: 6deg 100% 92%; /* on-error-container */
+    --on-pr: 160deg 100% 11%; /* on-primary */
+    --on-pr-con: 156deg 99% 66%; /* on-primary-container */
+    --on-pr-fx: 156deg 100% 6%; /* on-primary-fixed */
+    --on-pr-fx-var: 160deg 100% 16%; /* on-primary-fixed-variant */
+    --on-sec: 149deg 25% 17%; /* on-secondary */
+    --on-sec-con: 141deg 37% 86%; /* on-secondary-container */
+    --on-sec-fx: 154deg 51% 8%; /* on-secondary-fixed */
+    --on-sec-fx-var: 149deg 16% 25%; /* on-secondary-fixed-variant */
+    --on-sf: 90deg 7% 88%; /* on-surface */
+    --on-sf-var: 127deg 8% 77%; /* on-surface-variant */
+    --on-ter: 194deg 84% 14%; /* on-tertiary */
+    --on-ter-con: 198deg 88% 87%; /* on-tertiary-container */
+    --on-ter-fx: 195deg 100% 8%; /* on-tertiary-fixed */
+    --on-ter-fx-var: 196deg 43% 25%; /* on-tertiary-fixed-variant */
+    --outline: 133deg 4% 56%; /* outline */
+    --outline-var: 140deg 7% 27%; /* outline-variant */
+    --pr: 159deg 76% 52%; /* primary */
+    --pr-con: 160deg 100% 16%; /* primary-container */
+    --pr-fx: 156deg 99% 66%; /* primary-fixed */
+    --pr-fx-dim: 159deg 76% 52%; /* primary-fixed-dim */
+    --scrim: 0deg 0% 0%; /* scrim */
+    --sec: 143deg 19% 75%; /* secondary */
+    --sec-con: 149deg 16% 25%; /* secondary-container */
+    --sec-fx: 141deg 37% 86%; /* secondary-fixed */
+    --sec-fx-dim: 143deg 19% 75%; /* secondary-fixed-dim */
+    --shadow: 0deg 0% 0%; /* shadow */
+    --sf: 140deg 8% 7%; /* surface */
+    --sf-bright: 120deg 3% 22%; /* surface-bright */
+    --sf-con: 140deg 5% 12%; /* surface-container */
+    --sf-con-hg: 135deg 5% 16%; /* surface-container-high */
+    --sf-con-hgest: 135deg 4% 20%; /* surface-container-highest */
+    --sf-con-lw: 140deg 6% 10%; /* surface-container-low */
+    --sf-con-lwest: 140deg 11% 5%; /* surface-container-lowest */
+    --sf-dim: 140deg 8% 7%; /* surface-dim */
+    --sf-tint: 159deg 76% 52%; /* surface-tint */
+    --sf-var: 140deg 7% 27%; /* surface-variant */
+    --ter: 198deg 46% 76%; /* tertiary */
+    --ter-con: 196deg 43% 25%; /* tertiary-container */
+    --ter-fx: 198deg 88% 87%; /* tertiary-fixed */
+    --ter-fx-dim: 198deg 46% 76%; /* tertiary-fixed-dim */
+  }
+}
+@layer base {
+  /* * {
+    @apply border;
+  } */
+  body {
+    @apply bg-bg;
+  }
+}

@@ -1,0 +1,44 @@
+app
+  layout.tsx(RootLayout)
+  page.tsx(Landing Page)
+  (App)
+    (Navbar)
+      layout.tsx             # Navbar added here
+      home/
+      flashcard/
+      notes/
+      quiz/
+    (Auth)
+      sign/                  # page responsible for log in and sign up
+    (Profile)
+      profile/
+      settings/
+    (ReferSystem)
+  (Legal)
+    legal
+      layout.tsx
+      terms/
+      privacy/
+      cookie/
+      refund/
+  (WebHook)
+    hook
+      confirm-payment
+        route.ts
+  (Crons)
+  (API)
+    api
+      v1
+        (Auth)
+          auth/
+
+components
+  legal/
+  app/
+  ui/
+  
+    
+    
+    
+              
+      
